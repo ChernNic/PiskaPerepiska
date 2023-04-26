@@ -24,3 +24,30 @@ C:\Users\futbo\source\repos\PiskaPerepiska\PiskaPerepiska\obj\Debug\PiskaPerepis
 C:\Users\futbo\source\repos\PiskaPerepiska\PiskaPerepiska\obj\Debug\PiskaPerepiska.csproj.CopyComplete
 C:\Users\futbo\source\repos\PiskaPerepiska\PiskaPerepiska\obj\Debug\PiskaPerepiska.exe
 C:\Users\futbo\source\repos\PiskaPerepiska\PiskaPerepiska\obj\Debug\PiskaPerepiska.pdb
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\bin\Debug\PiskaPerepiska.exe.config
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\bin\Debug\PiskaPerepiska.exe
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\bin\Debug\PiskaPerepiska.pdb
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\bin\Debug\MaterialDesignColors.dll
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\PiskaPerepiska.csproj.AssemblyReference.cache
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\PiskaPerepiska.csproj.SuggestedBindingRedirects.cache
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\StyleDictionary.baml
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\MainWindow.g.cs
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\App.g.cs
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\PiskaPerepiska_MarkupCompile.cache
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\PiskaPerepiska_MarkupCompile.lref
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\App.baml
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\MainWindow.baml
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\PiskaPerepiska.g.resources
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\PiskaPerepiska.Properties.Resources.resources
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\PiskaPerepiska.csproj.GenerateResource.cache
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\PiskaPerepiska.csproj.CoreCompileInputs.cache
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\PiskaPerepiska.csproj.CopyComplete
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\PiskaPerepiska.exe
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\PiskaPerepiska.pdb
