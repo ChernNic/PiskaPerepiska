@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\futbo\OneDrive\Рабочий стол\PP\PiskaPerepiska\obj\Debug\
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\obj\Debug\
 PiskaPerepiska
 none
 false
 DEBUG;TRACE
-C:\Users\futbo\OneDrive\Рабочий стол\PP\PiskaPerepiska\App.xaml
-3-412664837
+C:\Users\Николай\OneDrive\Рабочий стол\PPP\PiskaPerepiska\App.xaml
+5776030799
 
-112051751367
-16-1431242111
-View\Chat.xaml;View\MainWindow.xaml;View\StyleDictionary.xaml;
+16-1497075468
+16176598292
+MVVM\View\Chat.xaml;MVVM\View\ConnectDialogWindow.xaml;MVVM\View\HostWindow.xaml;MVVM\View\MainWindow.xaml;MVVM\View\StyleDictionary.xaml;
 
-True
+False
 
