@@ -30,7 +30,7 @@ namespace PiskaPerepiska.MVVM.ViewModel
 
         public HostVM()
         {
-            IPEndPoint ipPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8888);
+            IPEndPoint ipPoint = new IPEndPoint(IPAddress.Any, 8888);
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             socket.Bind(ipPoint);
             socket.Listen(1000);

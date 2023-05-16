@@ -31,7 +31,7 @@ namespace PiskaPerepiska
 
         public MainVM() 
         {
-            OpenUserUICommand = new BindableCommand(_ => OpenUserUI(), o => !string.IsNullOrEmpty(Username));
+            OpenUserUICommand = new BindableCommand(_ => OpenUserUI());
             OpenHostUICommand = new BindableCommand(_ => OpenHostUI());
         }
 

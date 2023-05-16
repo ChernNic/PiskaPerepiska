@@ -21,7 +21,7 @@
                     Style="{DynamicResource CustomButtonStyle}" Cursor="Hand" 
                     Content="Host" FontFamily="Malgun Gothic Semilight" Command="{Binding OpenHostUICommand}"/>
             <Button x:Name="exitBtn" Width="100" Height="30" Style="{DynamicResource CustomButtonStyle}" Cursor="Hand" FontFamily="Malgun Gothic Semilight" 
-                    Content="User" Command="{Binding OpenUserUICommand}"/>
+                    IsEnabled="{Binding ElementName=textBox, Path=Text, Converter={StaticResource sringtobool}}" Command="{Binding OpenUserUICommand}" Content="User"/>
         </StackPanel>
     </Grid>
 </Window>

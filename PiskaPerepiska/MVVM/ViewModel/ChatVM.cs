@@ -93,7 +93,7 @@ namespace PiskaPerepiska.ViewModel
             _server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             username = name;
             OpenConnectDialogCommand = new BindableCommand(_ => OpenConectDialog());
-            SendMessageCommand = new BindableCommand(_ => SendMessage(username, _messageText), x => connectionInfo != "Connect");
+            SendMessageCommand = new BindableCommand(_ => SendMessage(username, _messageText));
             OpenMainMenuCommand = new BindableCommand(_ => OpenMainMenu());
         }
 

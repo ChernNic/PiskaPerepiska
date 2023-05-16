@@ -66,6 +66,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="MVVM\ViewModel\Helpers\Converters\ConverterDic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\Chat.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -92,6 +96,7 @@
     <Compile Include="MVVM\ViewModel\ConnectDialogWindowVM.cs" />
     <Compile Include="MVVM\ViewModel\Helpers\BindableCommand.cs" />
     <Compile Include="MVVM\ViewModel\Helpers\BindingsHelper.cs" />
+    <Compile Include="MVVM\ViewModel\Helpers\Converters\StringToBoolean.cs" />
     <Compile Include="MVVM\ViewModel\HostVM.cs" />
     <Compile Include="MVVM\ViewModel\MainVM.cs" />
     <Compile Include="MVVM\View\Chat.xaml.cs">
