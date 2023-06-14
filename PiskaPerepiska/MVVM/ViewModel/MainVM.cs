@@ -38,12 +38,20 @@ namespace PiskaPerepiska
         public void OpenUserUI()
         {
             new Chat(username).Show();
-            //Application.Current.MainWindow.Close(); // Закрывает окно выбора
+            Application.Current.MainWindow.Close(); // Закрывает окно выбора
         }
 
         public void OpenHostUI()
         {
-            new HostWindow().Show();
+            try
+            {
+
+                new HostWindow().Show();
+            }
+            catch
+            {
+
+            }
         }
     }
 }

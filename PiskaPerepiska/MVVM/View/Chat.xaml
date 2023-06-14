@@ -12,7 +12,7 @@
         xmlns:viewmodel="clr-namespace:PiskaPerepiska.ViewModel" 
         d:DataContext="{d:DesignInstance Type=viewmodel:ChatVM}"
         Title="Chat" Height="500" Width="800">
-    <Grid Background="#494949">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="2*"/>
@@ -23,17 +23,21 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Label Width="200" Height="30" VerticalAlignment="Bottom" Content="{Binding OnlineUsers}" FontSize="14" 
-               Foreground="White" FontFamily="Malgun Gothic Semilight"/>
-
-        <Border Grid.Row="1" BorderBrush="White" VerticalAlignment="Stretch"  
-                Margin="10" HorizontalAlignment="Stretch" BorderThickness="1" CornerRadius="4">
-            <ListView Grid.Row="1" Background="White" VerticalAlignment="Stretch"
+        <Border Grid.RowSpan="3" Background="#e8f0fe" VerticalAlignment="Stretch"  
+                HorizontalAlignment="Stretch" BorderThickness="1" CornerRadius="4">
+            <ListView Style="{DynamicResource ListViewStyle}" Grid.Row="1"  VerticalAlignment="Stretch" Name="Listbox"
                      FontSize="14" FontFamily="Malgun Gothic Semilight"
                      ItemsSource="{Binding Usernames}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextBlock Text="{Binding}"/>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon 
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    Kind="Person" 
+                                    Height="20" Width="20" Foreground="#afafaf"/>
+                            <Label Content="{Binding}"/>
+                        </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
@@ -42,11 +46,12 @@
         <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="0 20 0 0" 
                     VerticalAlignment="Bottom" HorizontalAlignment="Center">
             <Button x:Name="ConnectBtn" Width="300" Height="30" Margin="0 0 10 0"
-                    Style="{DynamicResource CustomButtonStyle}" Cursor="Hand" 
+                    Style="{DynamicResource MaterialDesignOutlinedButton}" Cursor="Hand" 
                     Content="{Binding connectionInfo}" Command="{Binding OpenConnectDialogCommand}" 
-                    FontFamily="Malgun Gothic Semilight"/>
+                    FontFamily="Malgun Gothic Semilight" Click="ConnectBtn_Click"/>
             <Button x:Name="exitBtn" Width="100" Height="30" 
-                    Style="{DynamicResource CustomButtonStyle}" 
+                    Style="{DynamicResource MaterialDesignFlatButton}"
+                    Background="Red" Foreground="White"
                     Command="{Binding OpenMainMenuCommand}"
                     Cursor="Hand" FontFamily="Malgun Gothic Semilight" 
                     Content="Exit"/>
@@ -85,14 +90,14 @@
               FontSize="13" Grid.Row="2" 
              Grid.Column="1" Background="White" Text="{Binding MessageText, Mode=TwoWay}"/>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0 0 40 0"  Grid.Row="2" Grid.Column="1">
-            <Button x:Name="sendMessage" Height="30" Width="40" 
+            <Button x:Name="sendMessage" Height="30" Width="40" IsDefault="True"
                     Style="{DynamicResource SendButtonStyle}" Command="{Binding SendMessageCommand}" Cursor="Hand"
-                    Margin="10">
+                    Margin="10" Click="sendMessage_Click">
                 <materialDesign:PackIcon 
                                     VerticalAlignment="Center"
                                     HorizontalAlignment="Center"
                                     Kind="Send" 
-                                    Height="20" Width="20" Foreground="#13674F"/>
+                                    Height="20" Width="20" Foreground="#adadad"/>
             </Button>
         </StackPanel>
     </Grid>

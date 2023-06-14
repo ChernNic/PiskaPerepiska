@@ -1,4 +1,6 @@
-﻿using PiskaPerepiska.ViewModel;
+﻿using PiskaPerepiska.MVVM.View;
+using PiskaPerepiska.MVVM.ViewModel;
+using PiskaPerepiska.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,5 +27,17 @@ namespace PiskaPerepiska.View
             DataContext = chatVM;
         }
 
+        private void sendMessage_Click(object sender, RoutedEventArgs e)
+        {
+            textBox.Text = "";
+        }
+
+        private void ConnectBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (ConnectBtn.Content != "Connect")
+            {
+                Listbox.ItemsSource = null;
+            }
+        }
     }
 }

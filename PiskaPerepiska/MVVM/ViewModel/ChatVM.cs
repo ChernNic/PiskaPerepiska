@@ -93,8 +93,8 @@ namespace PiskaPerepiska.ViewModel
             _server = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             username = name;
             OpenConnectDialogCommand = new BindableCommand(_ => OpenConectDialog());
-            SendMessageCommand = new BindableCommand(_ => SendMessage(username, _messageText));
-            OpenMainMenuCommand = new BindableCommand(_ => OpenMainMenu());
+            SendMessageCommand = new BindableCommand(_ => { SendMessage(username, _messageText); _messageText = ""; });
+            OpenMainMenuCommand = new BindableCommand(_ => { OpenMainMenu(); Usernames.Clear(); });
         }
 
         private async Task ReceiveMessages()
@@ -169,7 +169,7 @@ namespace PiskaPerepiska.ViewModel
 
                     try
                     {
-                        _server.ConnectAsync(hostname, 8888);
+                        _server.Connect(hostname, 8888);
                         SendMessage("Server", username);
                         ReceiveMessages();
                     }

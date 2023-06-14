@@ -5,7 +5,24 @@
                     xmlns:converters="clr-namespace:MaterialDesignThemes.Wpf.Converters;assembly=MaterialDesignThemes.Wpf"
                     xmlns:internal="clr-namespace:MaterialDesignThemes.Wpf.Internal;assembly=MaterialDesignThemes.Wpf">
 
-
+    
+    <Style x:Key="ListViewStyle" TargetType="{x:Type ListView}">
+        <Setter Property="Background" Value="#80afafaf"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource MaterialDesignTextBoxBorder}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="Foreground" Value="#80afafaf"/>
+        <Setter Property="ItemContainerStyle" Value="{Binding View, Converter={StaticResource MaterialDesignListViewItemContainerStyleConverter}, RelativeSource={RelativeSource Self}}"/>
+        <Setter Property="OverridesDefaultStyle" Value="False"/>
+        <Setter Property="ScrollViewer.CanContentScroll" Value="True"/>
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="ScrollViewer.PanningMode" Value="Both"/>
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="Template" Value="{Binding View, Converter={StaticResource MaterialDesignListViewTemplateConverter}, RelativeSource={RelativeSource Self}}"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+    </Style>
     <Style x:Key="CustomTextBox" TargetType="TextBox">
         <Setter Property="Background" Value="White" />
         <Setter Property="BorderBrush" Value="White" />

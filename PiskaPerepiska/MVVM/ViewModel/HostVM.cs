@@ -105,6 +105,8 @@ namespace PiskaPerepiska.MVVM.ViewModel
                     if (usernames.Contains(message.MessageText))
                     {
                         usernames.Remove(message.MessageText);
+                        clients.Remove(client);
+                        client.Close();
                     }
 
                     MessageModel usernamesMessage = new MessageModel() { Username = "UserList", MessageText = string.Join("|", usernames) };
@@ -124,7 +126,7 @@ namespace PiskaPerepiska.MVVM.ViewModel
 
                 foreach (var item in clients)
                 {
-                    if(item != client && ValidateUserName(message.MessageText))
+                    if(item != client)
                     {
                         SendMessage(item, MessageManager.GenerateMessage(message));
                     }
